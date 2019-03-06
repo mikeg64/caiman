@@ -1,0 +1,263 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="397104268" file="/home/mike/proj/caiman-rev/caimanmcr.prj" location="/home/mike/proj/caiman-rev" name="caimanmcr" preferred-package-location="/home/mike/proj/caiman-rev/caimanmcr/for_redistribution" preferred-package-type="package.type.install" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>caimanmcr</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.0</param.version>
+    <param.authnamewatermark>Michael Griffiths</param.authnamewatermark>
+    <param.email>m.griffiths@sheffield.ac.uk</param.email>
+    <param.company>The University of Sheffield</param.company>
+    <param.summary />
+    <param.description />
+    <param.screenshot />
+    <param.guid />
+    <param.installpath.string>/The_University_of_Sheffield/caimanmcr/</param.installpath.string>
+    <param.installpath.combo>option.installpath.user</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.target.install.notes>In the following directions, replace MR/v95 by the directory on the target machine where MATLAB is installed, or MR by the directory where the MATLAB Runtime is installed.
+
+(1) Set the environment variable XAPPLRESDIR to this value:
+
+MR/v95/X11/app-defaults
+
+
+(2) If the environment variable LD_LIBRARY_PATH is undefined, set it to the following:
+
+MR/v95/runtime/glnxa64:MR/v95/bin/glnxa64:MR/v95/sys/os/glnxa64:MR/v95/sys/opengl/lib/glnxa64
+
+If it is defined, set it to the following:
+
+${LD_LIBRARY_PATH}:MR/v95/runtime/glnxa64:MR/v95/bin/glnxa64:MR/v95/sys/os/glnxa64:MR/v95/sys/opengl/lib/glnxa64</param.target.install.notes>
+    <param.intermediate>${PROJECT_ROOT}/caimanmcr/for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}/caimanmcr/for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}/caimanmcr/for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}/caimanmcr</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>false</param.web.mcr>
+    <param.package.mcr>true</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>false</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <param.native.matlab>false</param.native.matlab>
+    <param.checkbox>false</param.checkbox>
+    <param.example />
+    <param.help.text />
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.summary />
+      <param.description />
+      <param.screenshot />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.install.notes />
+      <param.logdir />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.target.type />
+      <param.support.packages />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+      <param.native.matlab />
+      <param.checkbox />
+      <param.example />
+      <param.help.text />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}/caimansaasexample.m</file>
+    </fileset.main>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}/caimanDir/AEdge.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/BKUP6June2009matlabSelecRoutine.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/Back11_Jun_matlabSelectRoutine.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/Back12June_matlabSelectRoutine.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/Back28May_matlabSelectRoutine.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/BackBlueBrown.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/BranchPoints.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/caimanResultsF</file>
+      <file>${PROJECT_ROOT}/caimanDir/calculateDataOut.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/calculateRidgeParams.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/cellMigration.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/cellMigration.m~</file>
+      <file>${PROJECT_ROOT}/caimanDir/chromaticAnalysis.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/closeOpenObjects.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/colourHist2.m</file>
+      <file>${PROJECT_ROOT}/caimansaasexample.m</file>
+      <file>${PROJECT_ROOT}/calculateDataOut.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/add.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/addmetadata.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/addparamdouble.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/addparamint.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/addparammat.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/addparammmat3d.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/addparamstring.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/addparamvec.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/addparamvec_mex.cpp</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/callSoapService.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/cellarray2vec.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/createSoapMessage.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/createsimulation.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/deletemetadata.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/deleteparam.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/deletesimulation.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/exitiome.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/getmetadata.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/getnsteps.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/getnumobj.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/getparamdouble.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/getparamint.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/getparammat.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/getparammmat3d.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/getparamstring.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/getparamvec.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/getsimulationresults.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/getstep.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/initmyelist.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/iome.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/listmetadata.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/listparam.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/newsimulation.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/readlocalsimulation.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/readme.txt</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/readsimulation.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/requestsimulation.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/revord.c</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/runrequestedsimulation.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/runsimulation.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/runsimulationstep.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/serializeDOM.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/setgroupbarrier.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/setmetadata.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/setnsteps.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/setparamdouble.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/setparamint.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/setparammat.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/setparammmat3d.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/setparamstring.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/setparamvec.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/setsimulationstatus.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/setstep.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/simulationstatus.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/submitsimulation.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/test.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/testgroupbarrier.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/vec2cellarray.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/vectostring.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/writelocalsimulation.m</file>
+      <file>/home/mike/proj/pyiome/tools/matlab/iome_toolbox/writesimulation.m</file>
+    </fileset.resources>
+    <fileset.package />
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}/caimanDir/EndPoints.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/createOutputMessage.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/edgeCells.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/expandu.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/findVessBoundary.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/findWallThickness.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/gaussF.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/joinObjects.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/padData.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/quanti_r.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/quantifyHeartSprouts.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/reduceu.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/regionGrowing.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/regionGrowingCells.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/removeBranchRidges.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/removeImageOutliers.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/removeLineArtifact.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/removeThickRidges.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/scaleSpace.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/scaleSpaceLowMem.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/shadingCorrection.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/splitObjects.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/traceTransform.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/vesselAreaMask.m</file>
+      <file>${PROJECT_ROOT}/caimanDir/zerocross.m</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}/caimanmcr/for_testing" name="caimanmcr" optional="false">/home/mike/proj/caiman-rev/caimanmcr/for_testing/caimanmcr</file>
+      <file location="${PROJECT_ROOT}/caimanmcr/for_testing" name="run_caimanmcr.sh" optional="false">/home/mike/proj/caiman-rev/caimanmcr/for_testing/run_caimanmcr.sh</file>
+      <file location="${PROJECT_ROOT}/caimanmcr/for_testing" name="readme.txt" optional="true">/home/mike/proj/caiman-rev/caimanmcr/for_testing/readme.txt</file>
+      <file location="${PROJECT_ROOT}/caimanmcr/for_testing" name="splash.png" optional="false">/home/mike/proj/caiman-rev/caimanmcr/for_testing/splash.png</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/usr/local/MATLAB/R2018b</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="gpucoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="polyspacebugfinder" />
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <gpucoder>
+          <enabled>true</enabled>
+        </gpucoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <polyspacebugfinder>
+          <enabled>true</enabled>
+        </polyspacebugfinder>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>false</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>true</linux>
+      <solaris>false</solaris>
+      <osver>4.15.0-42-generic</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>glnxa64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>

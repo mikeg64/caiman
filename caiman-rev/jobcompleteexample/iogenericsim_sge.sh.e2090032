@@ -1,0 +1,8 @@
+Socket connection successful: master socket = 3 port 8080
+Socket connection successful: master socket = 3 port 8080
+Socket connection successful: master socket = 3 port 8080
+Socket connection successful: master socket = 3 port 8080
+Socket connection successful: master socket = 3 port 8080
+Socket connection successful: master socket = 3 port 8080
+Socket connection successful: master socket = 3 port 8080
+/var/spool/sge/node150/job_scripts/2090032: line 28: 30081 Segmentation fault      iogs initiome null $IOME_SIMNAME null
