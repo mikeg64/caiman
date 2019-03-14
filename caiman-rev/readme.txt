@@ -7,6 +7,8 @@ Get the caiman mcr folder
 curl -L "https://drive.google.com/open?id=1y3sVCf2Jb18I9rC4UIeXO9bBhLrKQvce" > caimanmcr.tgz
 tar -zxvf caimanmcr.tgz
 
+Caiman folder for downloading files from google drive manually
+https://drive.google.com/open?id=1TlTMMpWbrLdca365YkpAtxqkQLOTOmRW
 
 On the target computer, append the following to your LD_LIBRARY_PATH environment variable:  
 /home/mike/tools/caiman_MATLAB_Runtime/v95/runtime/glnxa64:/home/mike/tools/caiman_MATLAB_Runtime/v95/bin/glnxa64:/home/mike/tools/caiman_MATLAB_Runtime/v95/sys/os/glnxa64:/home/mike/tools/caiman_MATLAB_Runtime/v95/extern/bin/glnxa64  
