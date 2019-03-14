@@ -9,7 +9,9 @@ cp ../caimansaasexample.m .
 
 #qsub -sync y iogenericsim_sge.sh
 #./iogenericsim_sge.sh
-qsub -l mem=16G -sync y iogenericsim_sge.sh
+#qsub -l mem=16G -sync y iogenericsim_sge.sh
+
+sh ./iogenericsim_sge.sh
 
 echo "`cat imfile.log`"
 

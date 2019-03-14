@@ -30,7 +30,7 @@ curl http://caiman.shef.ac.uk/caiman/uploads/$IMFILE --output $IMFILE
 #matlab -nosplash -nodisplay  -r caimansaasexample 
 #/usr/local/packages5/matlab_r2009a/bin/matlab -nosplash -nodisplay  -r caimansaasexample
 #../run_caimansaasexample.sh /usr/local/MATLAB/R2018b
-/home/sa_cs1mkg/caiman-docker/caiman-rev/caimanmcr/for_redistribution_files_only/caimanmcr
+/home/sa_cs1mkg/caiman-server/caiman/caimanmcr/for_redistribution_files_only/caimanmcr
 #cp imfile.log ../testresults/
 #cp *.e* ../testresults/
 #cp *.o* ../testresults/
