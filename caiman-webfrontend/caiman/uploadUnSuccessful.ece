@@ -1,0 +1,8 @@
+	<center>
+        <?php                 sleep(30); ?>
+
+			<h1>The file upload was not successful <br /> 
+				Please try again <a href="<?php echo $_SERVER['PHP_SELF'] ?>">HERE!</a>
+			</h1>
+	</center>  
+	<br /><br /><br /><br /> 

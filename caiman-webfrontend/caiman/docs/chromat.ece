@@ -1,0 +1,11 @@
+  
+  <h1> Chromaticity Analysis </h1>
+<p>This webpage allows you to use an image-processing algorithm to transform an image from the traditional Red-Green-Blue colour space to the Hue-Saturation-Value colour space. The HSV model describes perceptual colour relationships related to the artistic ideas of hue, tint and shade. While hue is a circular property related to the wavelength of the colour where red corresponded approximately to 0<sup>o</sup>, yellow to 60<sup>o</sup>, green to 120<sup>o</sup>, cyan to 180<sup>o</sup>, blue to 240<sup>o</sup> and magenta to 315<sup>o</sup>. Saturation indicates the purity of a colour (saturation = 1) or how close to white or grey (saturation = 0) and thus devoid of colour. Value is related with the darkness or brightness of the pixels.</p>
+<p> For this algorith, hue, saturation and value have been quantised to 32 levels. The output of the algorithm is a 3D HSV histogram ( <i>m<sub>HSV</sub>(h,s,v)</i>  as explained in the reference below) as 32x32x32 matrix, where the value of each point in the matrix is the number of pixels with the corresponding (h,s,v) values. The 50% ratios (the amount of pixels that rest in one half of the matrix relative to the total, for each dimension) for hue, saturation and value are also provided. The code to plot the 2D and 3D histograms will soon be added to this webpage.
+</p>
+<p>  The Chromatic Analysis is used as part of a segmentation algorithm for cells stained through immunohistochemistry. The following article describes the algorithm, the  transformation from RGB to HSV and the 1D/2D/3D chromatic histograms in detail: 
+<b>C.C. Reyes-Aldasoro</b>, et. al., An automatic algorithm for the segmentation and morphological analysis of microvessels in immunostained histological tumour sections, <a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2818.2010.03464.x/abstract"> Journal of Microscopy</a>.
+</p>
+
+
+

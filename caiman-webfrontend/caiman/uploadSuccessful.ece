@@ -1,0 +1,12 @@
+<center>
+        <?php                 sleep(30); ?>
+	<h1>The file <i> <?php echo $imageName; ?> </i>has been uploaded successfully. <br /> 
+		An email with the results will be sent to:<i>
+		<?php echo $usersEmail; ?></i>
+		<br />  <br /> 				   
+		 <a href="<?php echo $_SERVER['PHP_SELF'] ?>">Continue</a>
+	</h1>
+</center>  
+<br /><br /><br /><br /> 
+	
+	

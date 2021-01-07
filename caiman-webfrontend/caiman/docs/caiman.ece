@@ -1,0 +1,92 @@
+<table
+style="text-align: left; width: 99%; margin-left: auto; margin-right: auto;"
+border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="vertical-align: top;">
+<div style="text-align: justify;"> </div>
+<br>
+
+
+
+
+<h1><i><i> CAIMAN: </i></i>CAncer IMage ANalysis </h1>
+<table
+style="text-align: left; width: 99%; margin-left: auto; margin-right: auto;"
+border="0" cellpadding="1" cellspacing="2">
+<tbody>
+<tr>
+<td style="vertical-align: top;">
+<p style="text-align: justify;">
+<big>
+The need for image analysis is ever
+growing in many fields and cancer is not an exception. With the advent
+of new imaging techniques such as intravital, confocal and multiphoton
+microscopy, just to mention a few, researchers can visualise
+physiological and pharmacological processes together with the
+traditional anatomical images that have been improving resolution. Yet,
+once the imaging of subjects has been achieved, sometimes there is a
+lack of resources to properly analyse and process the data and the
+wealth of the information contained in images and videos remains to be
+extracted in the near future. The development of
+methods of analysis that extract meaningful and quantitative
+information from these images is an important part in the search of
+understanding biological processes</big></p>
+<p style="text-align: justify;"><big><span
+style="font-weight: bold; font-style: italic;"><br>
+CAIMAN</span>
+is an Image Analysis internet-based project that combines the strength
+of open-source web-based scripting languages, the powerful&nbsp;
+high-level technical computing language <span
+style="font-style: italic;">MATLAB</span>,
+and the vast literature on image analysis and computer vision to
+provide a user-friendly web-page where any person can upload
+cancer-related images and execute analysis algorithms and obtain
+quantitative measurements related to their images.</big></p>
+
+<p style="text-align: justify;"><big><br>
+Follow this link for the paper where CAIMAN is described in detail: <br>
+Reyes-Aldasoro, C.C., Griffiths, M.K., Savas, D. & Tozer, G.M. (2010) CAIMAN: An online algorithm repository for Cancer Image Analysis. Comput. Meth. Prog. Bio. in press, <a href="http://dx.doi.org/10.1016/j.cmpb.2010.07.007"> doi:10.1016/j.cmpb.2010.07.007</a>. <br>
+</big></p>
+<p style="text-align: justify;"><big><br>
+The algorithms available at the moment at CAIMAN are:
+<ul> 
+<li> <b>measuring cellular migration</b> for scratch wound assays,
+<li> <b>vasculature tracing</b> with a scale space ridge tracing,
+<li> <b>shading correction </b>based on a signal envelope estimation retrospective algorithm,
+<li> <b>chromatic analysis </b>based on 2D/3D chromatic histograms of the <i>HSV</i> colour space,
+<!--<li> <b>quantification of sprouts </b> that emerge from heart tissue in culture.-->
+ <li> <b>Endothelial cell segmentation</b> using a chromatic segmentation algorithm. 
+<!-- <li> <b>RGB merging</b> combination of individual greyscale Red/Green/Blue channels into a single colour image. -->
+</ul>
+
+<br />
+More algorithms will be available in
+the future.</big></p>
+</td>
+<td style="vertical-align: top;">
+<br> <img style="width: 130px; " alt="Migration measurement"
+src="caiman/images/migration.jpg"><br>
+<br>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: center;"><img
+style=" height: 150px;" alt="Shading Correction"
+src="caiman/images/shading.jpg"></td>
+<td style="vertical-align: top;"><img
+style="width: 130px; "
+alt="Quantification of Western Blots" src="caiman/images/westQuant.gif"><br>
+</td>
+</tr>
+</tbody>
+</table>
+<div style="text-align: center;"><br>
+<br>
+</div>
+
+
+</td>
+</tr>
+</tbody>
+</table>

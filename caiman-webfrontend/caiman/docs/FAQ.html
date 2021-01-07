@@ -1,0 +1,396 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>Frequently Asked Questions</title>
+</head>
+<body>
+<a name="TOP"></a><br>
+<table style="text-align: left; width: 768px; height: 3680px;"
+ border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><br>
+      <br>
+Frequently Asked Questions<br>
+      <br><br>
+
+Contact email:      reyes {at} city [dot] ac [dot] uk
+<br>
+<br>
+
+<br>
+
+      <a href="caimanFAQ.php#how"><span style="font-weight: bold;">1)
+How does CAIMAN work?</span></a><br style="font-weight: bold;">
+      <br style="font-weight: bold;">
+      <a href="caimanFAQ.php#algorithms"><span
+ style="font-weight: bold;">2)
+What
+algorithms are being used?</span></a><br style="font-weight: bold;">
+      <br style="font-weight: bold;">
+      <a href="caimanFAQ.php#results"><span style="font-weight: bold;">3)
+Are the
+results always the same?</span></a><br style="font-weight: bold;">
+      <br style="font-weight: bold;">
+      <a href="caimanFAQ.php#Type"><span style="font-weight: bold;">4)
+Does
+the
+type of image impact on the results?</span></a><br
+ style="font-weight: bold;">
+      <br style="font-weight: bold;">
+      <a href="caimanFAQ.php#newAlgorithms"><span
+ style="font-weight: bold;">5)
+Is
+it possible to add more algorithms?</span></a><br>
+      <br>
+      <a href="caimanFAQ.php#test"><span style="font-weight: bold;">6)
+Are
+there
+any test images?</span></a><br style="font-weight: bold;">
+      <br style="font-weight: bold;">
+
+      <a href="caimanFAQ.php#time"><span style="font-weight: bold;">7)
+How long does it take to process an image?</span></a><br style="font-weight: bold;">
+      <br style="font-weight: bold;">
+      <a href="caimanFAQ.php#disclaimers"><span
+ style="font-weight: bold;">8)
+Are
+there any disclaimers?</span></a><br>
+      <br>
+      <hr style="width: 100%; height: 2px;"><br>
+      <br>
+      <span style="font-weight: bold;">1)<a name="how"></a> How does
+CAIMAN
+work?</span><br style="font-weight: bold;">
+      <br style="font-weight: bold;">
+Caiman is an interactive image processing website that does not require
+any specific software, expertise or technical knowledge from the user
+other than knowing what kind of processing is required for an image.<br>
+      <br>
+CAIMAN combines four technologies: <br>
+      <ul>
+        <li>the HTML-embedded scripting language PHP </li>
+        <li>a series of image processing algorithms that have
+been specifically designed to analyse different problems related to
+Cancer Research and Life Sciences </li>
+        <li>the powerful high-level technical computing
+language MATLAB, </li>
+        <li>the Interactive Object Management Environment
+(IOME) which is a unique, multi-purpose tool-kit that enables
+researchers to develop simulations which may be run as web services and
+accessed interactively. </li>
+      </ul>
+      <br>
+The combination of these four technologies resulted in a user-friendly
+web page where any person can upload cancer-related images and execute
+analysis algorithms and obtain quantitative measurements related to
+their images. This figure describes graphically the process of the
+analysis through CAIMAN.<br>
+      <br>
+      <div style="text-align: center;"><img
+ style="width: 611px; height: 371px;"
+ alt="Graphical description of CAIMAN" src="images/caiman.png"><br>
+      </div>
+      <br>
+More details about CAIMAN, its use and performance can be found in the following paper: <br>
+Reyes-Aldasoro, C.C., Griffiths, M.K., Savas, D. & Tozer, G.M. (2010) CAIMAN: An online algorithm repository for Cancer Image Analysis. Comput. Meth. Prog. Bio. in press, <a href="http://dx.doi.org/10.1016/j.cmpb.2010.07.007"> doi:10.1016/j.cmpb.2010.07.007</a>. <br>
+      <br>
+      <br>
+      <div style="text-align: right;"><a href="caimanFAQ.php#TOP">Return
+to
+Top of
+the page</a><br>
+      </div>
+      <br>
+      <br>
+      <span style="font-weight: bold;"><a name="algorithms"></a>2) What
+algorithms are being used?</span><br>
+      <br>
+The algorithms have been specifically developed for each task and some of them have been 
+published. When this is the case, you will have a link to the
+publisher's website where you can access the publication (depending on
+the access rights of your institution). In other cases, algorithms have
+been submitted for publication and we are awaiting the response of the
+journals.<br>      <br>
+It is important to remember that every algorithm will assume certain conditions. The shading correcting algorithm, for instance, assumes that 
+an original unbiased image was corrupted by a slowly-varying shading, and that this shading could be estimated from the signal envelope. Then, it is assumed that the <i>objects</i> contained in an image (cells for instance) will be covered by signal envelope (or the background) and that the background is either darker <i>or</i> brighter than the objects. These kind of assumptions will cover a large number of images but there could be an image where there are objects brighter and darker than a background (although this will be more theoretical than practical) and then the algorithm could provide a result that may not be satisfactory.<br>      <br>
+In summary, algorithms do not work under every imaginable situation, but what they do offer is a consistent processing for all the images they are applied to.
+      <br>
+      <br>
+      <div style="text-align: right;"><a href="caimanFAQ.php#TOP">Return
+to
+Top of
+the page</a><br>
+      </div>
+      <br>
+      <br>
+      <br>
+      <span style="font-weight: bold;"><a name="results"></a>3) Are the
+results always the same?</span><br>
+      <br>
+The images will be processed by an algorithm, therefore if you submit
+two identical images, you will always receive the same results. If two
+images are different, the algorithm will provide consistent results. However, the format of the image though can introduce differences, so if you
+save the same image as a JPEG or as a TIFF you may have different
+results for the same image, see below.<br>
+      <br>
+      <br>
+      <div style="text-align: right;"><a href="caimanFAQ.php#TOP">Return
+to
+Top of
+the page</a><br>
+      </div>
+      <br>
+      <br>
+      <span style="font-weight: bold;"><a name="Type"></a>4) Does the
+type of
+image impact on the results?</span><br>
+      <br>
+Yes. Two images may look very similar to the naked eye, but the format
+used to save them may impact considerably on the results. Look for
+instance at these two images, the one on the left is saved as a PNG
+whilst the one on the right is a JPEG.<br>
+      <br>
+      <br>
+      <table style="text-align: left; width: 80%;" border="1"
+ cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><img
+ style="width: 350px; height: 263px;" alt="PNG Format"
+ src="images/Fig1Tiff.png"><br>
+            </td>
+            <td style="vertical-align: top;"><img
+ style="width: 350px; height: 263px;" alt="JPEG Format"
+ src="images/Fig1JPG.jpg"><br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="text-align: center;"><br>
+      </div>
+      <div style="text-align: center;"><br>
+      </div>
+      <br>
+The differences may not be evident but if we zoom in, the sharp red
+line becomes blurry on the JPEG.<br>
+      <br>
+      <br>
+      <br>
+      <table style="text-align: left; width: 80%;" border="1"
+ cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><img
+ style="width: 350px; height: 263px;" alt="PNG Format"
+ src="images/Fig2Tiff.png"><br>
+            </td>
+            <td style="vertical-align: top;"><img
+ style="width: 350px; height: 263px;" alt="JPEG Format"
+ src="images/Fig2JPG.jpg"><br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <br>
+      <br>
+      <br>
+Therefore, if the images are going to be quantified by an algorithm
+based on the intensities of the pixels, the format will have an impact.
+Try to save always with the best quality you can, avoid JPEGs and GIFs
+which will not be accepted for publications in journals anyway.<br>
+      <br>
+      <br>
+<b>IMPORTANT</b> Try to avoid saving images with <b> compression</b> as in some cases Matlab cannot read these images.
+      <br>
+      <br>
+      <br>
+      <div style="text-align: right;"><a href="caimanFAQ.php#TOP">Return
+to
+Top of
+the page</a><br>
+      </div>
+      <br>
+      <br>
+      <span style="font-weight: bold;"><a name="newAlgorithms"></a>5)
+Is it
+possible to add more algorithms? Can I propose one experiment to be
+analysed?</span><br>
+      <br>
+Yes. We are constantly working on new algorithms and there are several
+algorithms on the pipeline at the moment. If you have an interesting
+experiment that produces images that require quantitative analysis,
+contact us and we will study the case. We cannot promise that an
+algorithm would be produced immediately but we will try. Send an email to (please replace {at} and {dot} when sending the email) <b> c.reyes {at} sheffield {dot} ac {dot} uk  </b> or <b> reyesaldasoro {at} gmail (dot) com </b> with a description of your images and the processing required together with one or two example images.<br>
+      <br>
+      <br>
+      <div style="text-align: right;"><a href="caimanFAQ.php#TOP">Return
+to
+Top of
+the page</a><br>
+      </div>
+      <br>
+      <span style="font-weight: bold;"><span style="font-weight: bold;"><a
+ name="test"></a>6) Are there any test images?</span></span><br>
+      <br>
+Yes. you can try CAIMAN with the following images, right click on any to download to your computer.<br>
+      <br>
+      <table style="text-align: left; width: 672px; height: 753px;"
+ border="1" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td colspan="2" rowspan="1"
+ style="vertical-align: top; text-align: center;">Migration
+measurement<br>
+            </td>
+          </tr>
+          <tr align="center">
+            <td style="vertical-align: top;"><img
+ style="width: 300px; height: 203px;" alt="Migration measurement 1"
+ src="images/migration1.jpg"><br>
+            </td>
+            <td style="vertical-align: top;"><img
+ style="width: 300px; height: 201px;" alt="Migration measurement 2"
+ src="images/migration2.jpg"><br>
+            </td>
+          </tr>
+          <tr align="center">
+            <td style="vertical-align: top;"><img
+ style="width: 300px; height: 203px;" alt="Migration measurement 3"
+ src="images/migration3.bmp"><br>
+            </td>
+            <td style="vertical-align: top;"><img
+ style="width: 300px; height: 201px;" alt="Migration measurement 4"
+ src="images/migration4.jpg"><br>
+            </td>
+          </tr>
+          <tr align="center">
+            <td style="vertical-align: top;"><img
+ style="width: 300px; height: 203px;" alt="Migration measurement 5"
+ src="images/migration5.jpg"><br>
+            </td>
+            <td style="vertical-align: top;"><br>
+            </td>
+          </tr>
+          <tr align="center">
+            <td colspan="2" rowspan="1" style="vertical-align: top;">Tracing
+of vasculature<br>
+            </td>
+          </tr>
+          <tr align="center">
+            <td style="vertical-align: top;"><img
+ style="width: 300px; height: 225px;" alt="Tracing Vasculature 1"
+ src="images/vasculature1.jpg"><br>
+            </td>
+            <td style="vertical-align: top;"><img
+ style="width: 300px; height: 147px;" alt="Tracing Vasculature 2"
+ src="images/vasculature2.jpg"><br>
+            </td>
+          </tr>
+          <tr align="center">
+            <td colspan="2" rowspan="1" style="vertical-align: top;">Shading
+correction<br>
+            </td>
+          </tr>
+          <tr align="center">
+            <td style="vertical-align: top;"> <img
+ style="width: 300px; height: 225px;" alt="Shading correction 1"
+ src="images/shading1.jpg"><br>
+            </td>
+            <td style="vertical-align: top;"><img
+ style="width: 300px; height: 225px;" alt="Shading correction 2"
+ src="images/shading2.jpg"><br>
+            </td>
+          </tr>
+         <tr align="center">
+            <td colspan="2" rowspan="1" style="vertical-align: top;">Endothelial Cell segmentation<br>
+            </td>
+          </tr>
+          <tr align="center">
+            <td style="vertical-align: top;"> <img
+ style="width: 300px; height: 225px;" alt="Endothelial cell segmentation 1"
+ src="images/Endothelial1.png"><br>
+            </td>
+            <td style="vertical-align: top;"><img
+ style="width: 300px; height: 225px;" alt="Endothelial cell segmentation 2"
+ src="images/Endothelial2.jpg"><br>
+            </td>
+          </tr>
+
+
+         <tr align="center">
+            <td colspan="2" rowspan="1" style="vertical-align: top;">Chromatic Analysis<br>
+            </td>
+          </tr>
+          <tr align="center">
+            <td style="vertical-align: top;"> <img
+ style="width: 300px; height: 225px;" alt="Fluorescent Cells"
+ src="images/Fluores.png"><br>
+            </td>
+            <td style="vertical-align: top;"><br>
+            </td>
+          </tr>
+
+
+
+        </tbody>
+      </table>
+      <br>
+      <br>
+      <br>
+      <div style="text-align: right;"><a href="caimanFAQ.php#TOP">Return
+to
+Top of
+the page</a><br>
+      </div>
+      <br>
+      <br>
+      <span style="font-weight: bold;"><a name="time"></a>7) How long does it take to process an image?</span><br>
+      <br>
+Roughly a few minutes. We have tested with images small (approximately 100 kb or 250 x 200) to large ones (1.5 Mb or 1,200 x 960) and the fastest time from submission to the email being received was 43 seconds, on average it will take more than a minute for shading correction or migration measurements. Tracing vessels takes longer, around3-4 minutes. But the network that you use and the unpredictable internet connections can increase the time. </span><br>
+      <br>
+      <br>
+      <br>
+      <div style="text-align: right;"><a href="caimanFAQ.php#TOP">Return
+to
+Top of
+the page</a><br>
+      </div>
+      <br>
+      <br>
+      <span style="font-weight: bold;"><a name="disclaimers"></a>8) Are
+there
+any disclaimers?</span><br>
+      <br>
+Yes, of course! <span style="font-style: italic;">The data and
+information is provided for educational and informational purposes
+only, and is not intended for professional purposes. The authors shall
+not be liable for any errors or responsibility for the accuracy,
+completeness, or usefulness of any information, or method in the
+content, or for any actions taken in reliance thereon. If you find any
+errors or problems with the programs we should try to fix them but no
+promise is made.</span><br>
+      <br>
+      <br>
+      <br>
+      <div style="text-align: right;"><a href="caimanFAQ.php#TOP">Return
+to
+Top of
+the page</a><br>
+      </div>
+      <br>
+      </span><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<br>
+<span style="font-weight: bold;"><br>
+</span>
+</body>
+</html>

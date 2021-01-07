@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by Michael Kenneth Griffiths (Self Employed) -->
+<iosim filename="iocaimanphp.xml">
+	<simulation class="GenericSteerSimulation" createmethod="1" name="mysim" nprocs="1" simulantclass="AgentModel" simulanttype="0">
+		<props flag="7" name="" numprops="3">
+			<prop flag="7" index="0" name="useremail">
+				<string>%useremail%</string>
+			</prop>
+			<prop flag="7" index="1" name="imagefile">
+				<string>%imagefile%</string>
+			</prop>
+			<prop flag="7" index="2" name="jobtype">
+				<string>%jobtype%</string>
+			</prop>
+		</props>
+		<steps configstepfreq="1" statestepfreq="1">2</steps>
+		<fileprops configfilename="configfile.xml" configreadmethod="1" configwritemethod="1" simreadmethod="1" simwritemethod="1" statefilename="statefile.xml" statereadmethod="1" statewritemethod="1"/>
+	</simulation>
+</iosim>

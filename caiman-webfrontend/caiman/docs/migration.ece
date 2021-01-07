@@ -1,0 +1,15 @@
+  
+  <h1> Measuring cellular migration with image processing </h1>
+<p>  
+This webpage allows you to use an image-processing algorithm for analysis of migration of vascular endothelial cells in culture.
+
+The algorithm is fully automatic and trained to detect the cellular regions on either side of an artificial <i>wound</i> made by dragging a sterile pipette tip across the monolayer of cells (scratch wound assay).
+
+Frequency filtering and mathematical morphology are used to approximate the boundaries of cellular regions. This allows the measurement of the distance between the regions, and therefore the migration rates.
+ <br /> <br />
+ The algorithm description can be found in the paper: <br /> <br />
+
+<b>Reyes-Aldasoro, C.C.</b>, Biram, D, Tozer, G. M., and Kanthou, C., <i>Measuring cellular migration with image processing</i>, <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4550690">Electronics
+Letters </a>(2008), 19 June 2008,&nbsp; Vol. 44, Issue 13, p. 791-793. 
+</p>
+

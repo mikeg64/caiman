@@ -1,0 +1,9 @@
+		<props flag="7" name="" numprops="3">
+			<prop flag="7" index="0" name="useremail">
+				<string>m.griffiths@sheffield.ac.uk</string></prop>
+			<prop flag="7" index="1" name="imagefile">
+				<string>1526559311shading2.png</string>
+			</prop>
+			<prop flag="7" index="2" name="jobtype">
+				<string>SH</string></prop>
+		</props>

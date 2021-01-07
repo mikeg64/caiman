@@ -16,16 +16,21 @@ try
    %tttt1=pwd;disp(tttt1)
    path(path,'../caimanDir')
    %open the file generated
+   
+   %
+   %nolonger needed because we parse a json file with the simulation
+   %parameters
+   
    %portfile = 'ioserverinfo.txt';                            %add comment if  we are not running standalone
    %portfile = 'ioserverinfo.txt';                      %remove comment if  we are not running standalone
-   portfile                = 'mysim0_port.txt';
-   fd                      = fopen(portfile);
+   %portfile                = 'mysim0_port.txt';
+   %fd                      = fopen(portfile);
    %res = mfscanf(fd,'%d %d %s')
-   res                     = textscan(fd,'%d %s');
-   fclose(fd);
+   %res                     = textscan(fd,'%d %s');
+   %fclose(fd);
    %port                   = res(1) id = res(2) hostname = res(3)
    %elist                  = iome(res(3),res(1),res(2));
-   elist                   = iome('localhost',res{1},0);
+   %elist                   = iome('localhost',res{1},0);
    %readsimulation('simfile.xml',elist);
 
 
@@ -42,15 +47,23 @@ end
 %--------------------------------------------------------------------------------------------------
 
 try
-    userEmail           = getparamstring('useremail',elist);
-    imageFile           = getparamstring('imagefile',elist);
-    jobtype             = getparamstring('jobtype',elist);
+    
+    jsontext = fileread("simfile.json");
+    simdat = jsondecode(jsontext);
+
+    
+    
+    simdat.jobtype
+    
+    userEmail           = simdat.useremail;
+    imageFile           = simdat.imagefile;
+    jobtype             = simdat.jobtype;
     outputCode          = jobtype;
     disp(userEmail);
     disp(imageFile);
 catch
     outputCode                          = 'E2b';
-    display('Failed to get parameters from local iome server');
+    display('Failed to parse parameters from job json file');
     exitiome(elist);
     exitiome(elist);
     exit();       
@@ -383,17 +396,19 @@ else
             sendmail(userEmail,'Results from Caiman ',outputMessage);    
 end
 
-try
-   exitiome(elist);
-catch
-   display('Unable to close IOME'); 
-end
 
-try
-    exitiome(elist);
-catch
-    display('iome server closed!');
-end
+%no longer required iome server not needed
+% try
+%    exitiome(elist);
+% catch
+%    display('Unable to close IOME'); 
+% end
+% 
+% try
+%     exitiome(elist);
+% catch
+%     display('iome server closed!');
+% end
 
 exit();
 

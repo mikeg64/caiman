@@ -1,0 +1,16 @@
+  
+  <h1> Tracing the vasculature in microscopy images </h1>
+<p>  
+This webpage allows you to use an image-processing algorithm to trace the vessels of the microvasculature that surrounds a tumour.
+
+The algorithm is fully automatic and uses a scale space approach to detect the most relevant vessels. The intensity of the image pixels is considered to be analogous to the topographical altitude on a map and then the vessels become the equivalent of a ridge. The scale space approach will apply filters to the image to successively blur it and thus erase detail in order to detect the ridges of different widths.</p>
+<p>
+ The algorithm description can be found in the paper: 
+</p>
+<p>
+<b>CC Reyes-Aldasoro</b>, MA Bjorndahl, S Akerman, J Ibrahim, MK Griffiths, GM Tozer
+<i>Online chromatic and scale-space microvessel-tracing analysis for transmitted light optical images</i>
+<a href="http://www.sciencedirect.com/science/article/pii/S0026286212001586">Microvascular Research</a>
+Volume 84, Issue 3, November 2012, Pages 330-339.
+</p>
+

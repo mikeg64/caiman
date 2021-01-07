@@ -1,0 +1,6 @@
+  
+  <h1> Quantification of the sprouts relative to the general area of the heart </h1>
+<p>  
+This webpage allows you to use an image-processing algorithm to quantify the labelled sprouts that emerge from heart tissue. The algorithm assumes that the sprouts have been manually coloured in <b>red</b> and the heart in <b>blue</b> previously, then adds the areas of each of these regions and finds the ratio of sprouts to total area.
+</p>
+

@@ -1,0 +1,33 @@
+<body>
+<!-- header start --><!-- call browser check script -->
+<script type="text/javascript" language="JavaScript"
+ src="http://www.shef.ac.uk/sheffield/road/Classic/article/0/shared/js/oldbrowser.js"></script><!-- global navigation -->
+
+<!-- // global navigation -->
+<!-- header bar -->
+<div id="header">
+<table summary="Header Table">
+  <tbody>
+    <tr>
+      <td id="headerLeft">
+      <div id="headerCrest"> <a href="http://www.shef.ac.uk/"><img
+ src="http://www.shef.ac.uk/sheffield/road/Classic/article/0/shared/images/crest-l.gif"
+ alt="University Crest"></a> </div>
+      </td>
+      <td id="headerRight"><!-- // page heading start -->
+      <div id="headerTitle">
+      <h1 id="pageTitle"><small>CAIMAN : CAncer IMage ANalysis</small></h1>
+      </div>
+      <td id="headerRight">
+      <div id="headerCrest"> <a href="http://www.city.ac.uk/"><img
+ src="http://caiman.group.shef.ac.uk/caiman/images/cityU.png"
+ alt="University Crest" style=" height: 80px;"></a> </div>
+      </td>
+
+
+<!-- // page heading end --> </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<!-- //  header bar --><!-- header end -->

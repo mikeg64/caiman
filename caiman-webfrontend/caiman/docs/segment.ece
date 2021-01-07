@@ -1,0 +1,13 @@
+  
+  <h1> Automatic segmentation algorithm for the morphological analysis of microvessels in immunostained histological tumour sections </h1>
+<p>  
+Despite the popularity of the staining for different proteins by immunohistochemistry and the growth and power of computer and image analysis algorithms, manual procedures are still common to assess the presence, absence or intensity of staining by visual observation, perform measurements, or count.
+</p>
+<p> The following article describes the algorithm, which is fully automatic, in detail: 
+<b>C.C. Reyes-Aldasoro</b>, et. al., An automatic algorithm for the segmentation and morphological analysis of microvessels in immunostained histological tumour sections, <a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2818.2010.03464.x/abstract"> Journal of Microscopy</a>.
+</p>
+
+
+<p>This webpage allows you to use an image-processing algorithm for the segmentation and morphological analysis algorithm for the analysis of microvessels from CD31 immunostained histological tumour sections. The algorithm exploited the distinctive hues of stained vascular endothelial cells, cell nuclei and background, which provided the seeds for a region-growing algorithm in the 3D Hue, Saturation, Value (HSV) colour model. The segmented objects were post-processed with three morphological tasks: joining separate objects that were likely to belong to a single vessel, closing objects that had a narrow gap around their periphery, and splitting objects with multiple lumens into individual vessels.  
+</p>
+
