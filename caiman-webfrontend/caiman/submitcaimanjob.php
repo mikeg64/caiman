@@ -1,5 +1,5 @@
 <?php
-require_once('iome/iome.php');
+require_once('iome/iome.php');  //MKG 07/01/2021 only used for the myioservice definition server address and port
 
 $myioservice = new ioservice;
 //$myioservice->server = 'suilven.shef.ac.uk';
@@ -105,7 +105,7 @@ if (mysql_fetch_array($result))
 	   /*we use the str_replace function to acheive this*/
 	   /*str_replace — Replace all occurrences of the search string with the replacement string*/
 
-	$jobfile = file_get_contents  ( "iocaimanphp.xml");
+	$jobfile = file_get_contents  ( "iocaimanphp.json");  //MKG 07/01/2020
         $imagecontents = file_get_contents  ( $target_path);
         $tempjobfile = str_replace("%imagefile%", $imagefile, $jobfile);
         $temptjobfile = str_replace("%useremail%", $useremail, $tempjobfile);
