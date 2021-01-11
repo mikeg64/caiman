@@ -105,7 +105,7 @@ if (mysql_fetch_array($result))
 	   /*we use the str_replace function to acheive this*/
 	   /*str_replace — Replace all occurrences of the search string with the replacement string*/
 
-	$jobfile = file_get_contents  ( "iocaimanphp.json");  //MKG 07/01/2020
+	 $jobfile = file_get_contents  ( "iocaimanphp.xml");  //MKG 11/01/2020 reverted back to xml because xml reader in Matlab works
         $imagecontents = file_get_contents  ( $target_path);
         $tempjobfile = str_replace("%imagefile%", $imagefile, $jobfile);
         $temptjobfile = str_replace("%useremail%", $useremail, $tempjobfile);

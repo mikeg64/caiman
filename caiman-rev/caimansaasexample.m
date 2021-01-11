@@ -48,26 +48,60 @@ end
 
 try
     
-    jsontext = fileread("simfile.json");
-    simdat = jsondecode(jsontext);
+    xDoc = xmlread('simfile.xml');
+    props=xDoc.getElementsByTagName('prop');
 
-    
-    
-    simdat.jobtype
-    
-    userEmail           = simdat.useremail;
-    imageFile           = simdat.imagefile;
-    jobtype             = simdat.jobtype;
+    pemail=props.item(0);
+    userEmail           = strip(char(pemail.getTextContent));
+ 
+    pimageFile=props.item(1);
+    imageFile           = strip(char(pimageFile.getTextContent));
+ 
+    pjobtype=props.item(2);
+    jobtype             = strip(char(pjobtype.getTextContent));
+
+  
     outputCode          = jobtype;
     disp(userEmail);
     disp(imageFile);
 catch
     outputCode                          = 'E2b';
-    display('Failed to parse parameters from job json file');
+    display('Failed to parse parameters from job XML file');
     exitiome(elist);
     exitiome(elist);
     exit();       
 end
+
+
+
+%
+% . This version used to read json format
+%
+
+% try
+%     
+%     jsontext = fileread("simfile.json");
+%     simdat = jsondecode(jsontext);
+% 
+%     
+%     
+%     simdat.jobtype
+%     
+%     userEmail           = simdat.useremail;
+%     imageFile           = simdat.imagefile;
+%     jobtype             = simdat.jobtype;
+%     outputCode          = jobtype;
+%     disp(userEmail);
+%     disp(imageFile);
+% catch
+%     outputCode                          = 'E2b';
+%     display('Failed to parse parameters from job json file');
+%     exitiome(elist);
+%     exitiome(elist);
+%     exit();       
+% end
+
+
 
 
 
