@@ -11,10 +11,12 @@
 %--------------------------------------------------------------------------------------------------
 %   1   set and open IOME settings
 %--------------------------------------------------------------------------------------------------
+%disabled the e-mail send
+% added lines to generate textfile
 
 try
    %tttt1=pwd;disp(tttt1)
-   %path(path,'../caimanDir')  %remove path generation option for mcr
+   %path(path,'../caimanDir')
    %open the file generated
    
    %
@@ -33,10 +35,10 @@ try
    %elist                   = iome('localhost',res{1},0);
    %readsimulation('simfile.xml',elist);
 
-
-   setpref('Internet','SMTP_Server','smtp-relay.gmail.com'); %MKG university of sheffield now uses gmail old mailhost disabled end of february 2018
+  %setpref('Internet','SMTP_Server','imap.gmail.com'); %MKG university of sheffield now uses gmail old mailhost disabled end of february 2018
+  % setpref('Internet','SMTP_Server','smtp-relay.gmail.com'); %MKG university of sheffield now uses gmail old mailhost disabled end of february 2018
    %setpref('Internet','SMTP_Server','mailhost.shef.ac.uk');
-   setpref('Internet','E_mail','m.griffiths@sheffield.ac.uk');
+  % setpref('Internet','E_mail','m.griffiths@sheffield.ac.uk');
    %setpref('Internet','E_mail','c.reyes@sheffield.ac.uk');
 catch
     outputCode                          = 'E2a';
@@ -383,13 +385,17 @@ if ~strcmp(outputCode(1),'E')
               imageNameOut                   = strcat(ImageName(11:end));
               if isa(dataOut,'uint8')
                   if strcmp(imageNameOut(end-2:end),'tif')
-                    imwrite(dataOut,imageNameOut,'tif','resolution',150);                  
+                    imwrite(dataOut,imageNameOut,'tif','resolution',150); 
+                  elseif strcmp(imageNameOut(end-2:end),'png')
+                    imwrite(dataOut,imageNameOut,'png');                                     
                   else
                     imwrite(dataOut,imageNameOut,'jpg');
                   end
               else
                   if strcmp(imageNameOut(end-2:end),'tif')
                     imwrite(dataOut/255,imageNameOut,'tif','resolution',150);
+                  elseif strcmp(imageNameOut(end-2:end),'png')
+                    imwrite(dataOut/255,imageNameOut,'png');                    
                   else
                     imwrite(dataOut/255,imageNameOut,'jpg');
                   end
@@ -401,33 +407,64 @@ if ~strcmp(outputCode(1),'E')
                if exist('finalResults','var')
                     dataNameOut                   = strcat(ImageName(11:end-4),'.mat');
                     save(dataNameOut,'finalResults');
-                    sendmail(userEmail,'Results from Caiman',outputMessage,{imageNameOut,dataNameOut});
+                    
+                    fileID = fopen('outputmsg.txt','w');
+            	     fprintf(fileID,'Results from Caiman %s %s %s\n',outputMessage{1}, imageNameOut, dataNameOut);
+	    	     fclose(fileID);                
+
+                    
+                    
+                    
+                    %sendmail(userEmail,'Results from Caiman',outputMessage,{imageNameOut,dataNameOut});
                     %sendmail(userEmail,'Results from Caiman',outputMessage,{imageNameOut});                    
                 else
-                     sendmail(userEmail,'Results from Caiman',outputMessage,{imageNameOut});
+                
+                     fileID = fopen('outputmsg.txt','w');
+            	     fprintf(fileID,'Results from Caiman %s %s \n',outputMessage{1}, imageNameOut);
+	    	     fclose(fileID);                
+
+                
+                
+                     %sendmail(userEmail,'Results from Caiman',outputMessage,{imageNameOut});
                  end 
              catch
                   %getpref('Internet')
                   outputCode                  = 'E1';
                   outputMessage               = createOutputMessage(outputCode);
-                  sendmail(userEmail,'Results from Caiman',outputMessage);                
+                  
+                  
+                fileID = fopen('outputmsg.txt','w');
+            	fprintf(fileID,'Results from Caiman %s\n',outputMessage{1});
+	    	fclose(fileID);                
+
+                  
+                  %sendmail(userEmail,'Results from Caiman',outputMessage);                
               end
             else
                if exist('finalResults','var')
                     dataNameOut                   = strcat(ImageName(11:end-4),'.mat');
                     save(dataNameOut,'finalResults');
-                    sendmail(userEmail,'Results from Caiman',outputMessage,{dataNameOut});                    
-               else                
-                   sendmail(userEmail,'Results from Caiman',outputMessage);
+                     fileID = fopen('outputmsg.txt','w');
+                   fprintf(fileID,'Results from Caiman %s, %s\n',outputMessage{1},dataNameOut);
+	            fclose(fileID);
+                    %sendmail(userEmail,'Results from Caiman',outputMessage,{dataNameOut});                    
+               else
+                       fileID = fopen('outputmsg.txt','w');
+            		fprintf(fileID,'Results from Caiman %s\n',outputMessage{1});
+	    		fclose(fileID);                
+                   %sendmail(userEmail,'Results from Caiman',outputMessage);
                end           
             end
             %--------------------------------------------------------------------------------------------------
             % 6 delete image file
             %--------------------------------------------------------------------------------------------------
-            delete(imageNameOut);   
+            %delete(imageNameOut);   %commented out by MKG 18/01/2020%
 else
             outputMessage                   = createOutputMessage(outputCode);
-            sendmail(userEmail,'Results from Caiman ',outputMessage);    
+            fileID = fopen('outputmsg.txt','w');
+            fprintf(fileID,'%s\n',outputMessage{1});
+	    fclose(fileID);
+            %sendmail(userEmail,'Results from Caiman ',outputMessage);    
 end
 
 
@@ -444,5 +481,5 @@ end
 %     display('iome server closed!');
 % end
 
-exit();
+%exit();
 
