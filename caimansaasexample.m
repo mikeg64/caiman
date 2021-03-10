@@ -382,7 +382,8 @@ if ~strcmp(outputCode(1),'E')
             %if there is a dataOut, prepare the image to attach, otherwise just send the email
             if exist('dataOut','var')
               %imageNameOut                   = strcat(ImageName,'.jpg');
-              imageNameOut                   = strcat(ImageName(11:end));
+              imageNameOut                   = strcat('final_',ImageName);
+
               if isa(dataOut,'uint8')
                   if strcmp(imageNameOut(end-2:end),'tif')
                     imwrite(dataOut,imageNameOut,'tif','resolution',150); 
@@ -405,7 +406,7 @@ if ~strcmp(outputCode(1),'E')
               %--------------------------------------------------------------------------------------------------
               try
                if exist('finalResults','var')
-                    dataNameOut                   = strcat(ImageName(11:end-4),'.mat');
+                    dataNameOut                   = strcat(ImageName(1:end-4),'.mat');
                     save(dataNameOut,'finalResults');
                     
                     fileID = fopen('outputmsg.txt','w');
